@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-size: 14px !important;
+    font-family: "Fira Code", monospace;
+}
+
+:root {
+    --background-color: #232627;
+    --accent-color: #1cdc9a;
+    --color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    text-align: right;
+    border-bottom: 1px dashed var(--accent-color);
+    background-color: var(--background-color);
+    z-index: 1;
+}
+
+a,
+.ls > a {
+    color: var(--accent-color);
+}
+
+a:hover,
+.ls > a:hover {
+    color: var(--color);
+    background-color: var(--accent-color);
+}
+
+.ls.dir {
+    color: #1d99f3;
+}
+
+.ls.file {
+    color: #44853a;
+}
+
+nav > a:first-of-type {
+    margin-right: auto;
+}
+
+main {
+    padding: 0 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+main > article {
+    padding: 20px 0 20px 2ch;
+    scroll-margin-top: 39px;
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    background-color: var(--background-color);
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px dashed var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        width: 100%;
+    }
+
+    main > article {
+        scroll-margin-top: 0;
+    }
+
+    nav {
+        display: block;
+        position: relative;
+        padding: 0;
+    }
+
+    nav > a {
+        border-right: 0 !important;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
