@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#232627">
-    <title>Piotr Sokołowski</title>
+    <meta name="theme-color" content="#232627" />
+    <title>File lister</title>
 
-    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-    <link rel="icon" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
-    <link rel="apple-touch-startup-image" href="/favicon.png" />
+    <link rel="shortcut icon" href="<?php echo str_replace($_GET['path'], '', $_SERVER['REQUEST_URI']) ?>favicon.png" type="image/png" />
+    <link rel="icon" href="<?php echo str_replace($_GET['path'], '', $_SERVER['REQUEST_URI']) ?>favicon.png" />
+    <link rel="apple-touch-icon" href="<?php echo str_replace($_GET['path'], '', $_SERVER['REQUEST_URI']) ?>favicon.png" />
+    <link rel="apple-touch-startup-image" href="<?php echo str_replace($_GET['path'], '', $_SERVER['REQUEST_URI']) ?>favicon.png" />
 
-    <link rel="stylesheet" href="/webfm-style.css" />
+    <link rel="stylesheet" href="<?php echo str_replace($_GET['path'], '', $_SERVER['REQUEST_URI']) ?>webfm-style.css" />
 </head>
 
 <body>
