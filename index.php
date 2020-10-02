@@ -67,7 +67,7 @@
                         ) !== false
                     ) {
                         // Show button to preview code if file is text or json
-                        echo ' <a href="/code.php?path=' . $path . $file . '">[Kod]</a>';
+                        echo ' <a href="' . str_replace($_GET['path'], '', $_SERVER['REQUEST_URI']) . 'code.php?path=' . str_replace($_GET['path'], '', $_SERVER['REQUEST_URI']) . $path . $file . '">[Kod]</a>';
                     } else {
                         echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
                     }
