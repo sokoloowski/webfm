@@ -36,6 +36,7 @@
             $path = $_GET['path'];
             $fullpath = __DIR__ . '/' . $path;
             $files = scandir($fullpath);
+            sort($files, SORT_NATURAL);
             echo '<p>' . $fullpath . '</p>';
             if ($path) {
                 // if $path is not empty, show "..", else you're in main dir
